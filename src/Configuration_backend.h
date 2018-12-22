@@ -155,11 +155,11 @@
 #if ENABLED(TRONXY_X5S)
   #define SLIM_1284P
   #define BAUDRATE 115200
-  
+
   #ifndef MOTHERBOARD
     #define MOTHERBOARD BOARD_MELZI_TRONXY
   #endif
-    
+
   #define X_MIN_ENDSTOP_INVERTING true
   #define Y_MIN_ENDSTOP_INVERTING true
   #define Z_MIN_ENDSTOP_INVERTING true
@@ -177,17 +177,17 @@
       #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 95 }
     #endif
   #endif
-  
+
   #define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
-  
+
   #define DEFAULT_MAX_FEEDRATE          { 400, 400, 15, 50 }
 
   #define DEFAULT_MAX_ACCELERATION      { 1000, 1000, 50, 5000 }
-  
-  #define DEFAULT_ACCELERATION          1000    
-  #define DEFAULT_RETRACT_ACCELERATION  1000   
+
+  #define DEFAULT_ACCELERATION          1000
+  #define DEFAULT_RETRACT_ACCELERATION  1000
   #define DEFAULT_TRAVEL_ACCELERATION   1000
-  
+
   #define COREXY
 
   #define X_BED_SIZE 330
@@ -216,7 +216,7 @@
   #else
     #define INVERT_E0_DIR false
   #endif
-  
+
   #define PRINTER_ENABLED_CHECK
 #endif //end x5s settings
 
@@ -224,11 +224,11 @@
 #if ENABLED(TRONXY_X3S)
   #define SLIM_1284P
   #define BAUDRATE 115200
-  
+
   #ifndef MOTHERBOARD
     #define MOTHERBOARD BOARD_MELZI_TRONXY
   #endif
-    
+
   #define X_MIN_ENDSTOP_INVERTING true
   #define Y_MIN_ENDSTOP_INVERTING true
   #define Z_MIN_ENDSTOP_INVERTING true
@@ -246,16 +246,16 @@
       #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 95 }
     #endif
   #endif
-  
+
   #define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
-  
+
   #define DEFAULT_MAX_FEEDRATE          { 300, 300, 15, 50 }
 
   #define DEFAULT_MAX_ACCELERATION      { 500, 500, 50, 5000 }
-  
-  #define DEFAULT_ACCELERATION          500    
-  #define DEFAULT_RETRACT_ACCELERATION  3000   
-  #define DEFAULT_TRAVEL_ACCELERATION   500    
+
+  #define DEFAULT_ACCELERATION          500
+  #define DEFAULT_RETRACT_ACCELERATION  3000
+  #define DEFAULT_TRAVEL_ACCELERATION   500
 
   #define X_BED_SIZE 330
   #define Y_BED_SIZE 330
@@ -283,7 +283,7 @@
   #else
     #define INVERT_E0_DIR false
   #endif
-  
+
   #define PRINTER_ENABLED_CHECK
 #endif //end x3s settings
 
@@ -303,7 +303,7 @@
   #define Y_MAX_ENDSTOP_INVERTING true
   #define Z_MAX_ENDSTOP_INVERTING true
   #define Z_MIN_PROBE_ENDSTOP_INVERTING true
-  
+
   #if ENABLED(TITAN_EXTRUDER)
     #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, TITAN_EXTRUDER_STEPS }
   #else
@@ -313,23 +313,23 @@
       #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 100 }
     #endif
   #endif
-  
+
   #define DEFAULT_MAX_FEEDRATE          { 300, 300, 15, 50 }
   #define DEFAULT_MAX_ACCELERATION      { 2000, 2000, 50, 2000 }
 
-  #define DEFAULT_ACCELERATION          1000    
-  #define DEFAULT_RETRACT_ACCELERATION  1000   
-  #define DEFAULT_TRAVEL_ACCELERATION   1000    
-  
+  #define DEFAULT_ACCELERATION          1000
+  #define DEFAULT_RETRACT_ACCELERATION  1000
+  #define DEFAULT_TRAVEL_ACCELERATION   1000
+
   #define DEFAULT_XJERK                 10.0
   #define DEFAULT_YJERK                 10.0
   #define DEFAULT_ZJERK                  0.4
   #define DEFAULT_EJERK                  5.0
-  
+
   #define INVERT_X_DIR true
   #define INVERT_Y_DIR true
   #define INVERT_Z_DIR false
-  
+
   #if ENABLED(TITAN_EXTRUDER)
     #define INVERT_E0_DIR true
   #else
@@ -339,7 +339,7 @@
   #define X_BED_SIZE 310
   #define Y_BED_SIZE 310
   #define Z_MAX_POS 410
-  
+
   #if ENABLED(HOME_ADJUST)
     #define X_MIN_POS X_HOME_LOCATION
     #define Y_MIN_POS Y_HOME_LOCATION
@@ -352,7 +352,7 @@
   #define ENCODER_PULSES_PER_STEP 4
   #define ENCODER_STEPS_PER_MENU_ITEM 1
   #define REVERSE_ENCODER_DIRECTION
-  
+
   #define PRINTER_ENABLED_CHECK
 #endif //end adimlab i3 plus settings
 
@@ -372,7 +372,7 @@
   #define Y_MAX_ENDSTOP_INVERTING true
   #define Z_MAX_ENDSTOP_INVERTING true
   #define Z_MIN_PROBE_ENDSTOP_INVERTING true
-  
+
   #if ENABLED(TITAN_EXTRUDER)
     #define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 800, TITAN_EXTRUDER_STEPS }
   #else
@@ -382,7 +382,7 @@
       #define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 800, 200 }
     #endif
   #endif
-  
+
   #undef X_DRIVER_TYPE
   #undef Y_DRIVER_TYPE
   #undef Z_DRIVER_TYPE
@@ -391,23 +391,23 @@
   #define Y_DRIVER_TYPE  DVR8825
   #define Z_DRIVER_TYPE  DVR8825
   #define E0_DRIVER_TYPE DVR8825
-  
+
   #define DEFAULT_MAX_FEEDRATE          { 300, 300, 15, 50 }
   #define DEFAULT_MAX_ACCELERATION      { 2000, 2000, 200, 10000 }
 
-  #define DEFAULT_ACCELERATION          1000    
-  #define DEFAULT_RETRACT_ACCELERATION  1500   
-  #define DEFAULT_TRAVEL_ACCELERATION   1000    
-  
+  #define DEFAULT_ACCELERATION          1000
+  #define DEFAULT_RETRACT_ACCELERATION  1500
+  #define DEFAULT_TRAVEL_ACCELERATION   1000
+
   #define DEFAULT_XJERK                 10.0
   #define DEFAULT_YJERK                 10.0
   #define DEFAULT_ZJERK                  0.4
   #define DEFAULT_EJERK                  5.0
-  
+
   #define INVERT_X_DIR true
   #define INVERT_Y_DIR false
   #define INVERT_Z_DIR true
-  
+
   #if ENABLED(TITAN_EXTRUDER)
     #define INVERT_E0_DIR false
   #else
@@ -417,7 +417,7 @@
   #define X_BED_SIZE 300
   #define Y_BED_SIZE 300
   #define Z_MAX_POS 400
-  
+
   #if ENABLED(HOME_ADJUST)
     #define X_MIN_POS X_HOME_LOCATION
     #define Y_MIN_POS Y_HOME_LOCATION
@@ -425,10 +425,10 @@
     #define X_MIN_POS 0
     #define Y_MIN_POS 0
   #endif
-  
+
   #define ENCODER_PULSES_PER_STEP 4
   #define ENCODER_STEPS_PER_MENU_ITEM 1
-  
+
   #define PRINTER_ENABLED_CHECK
 #endif
 
@@ -464,7 +464,7 @@
   #define Y_MAX_ENDSTOP_INVERTING true
   #define Z_MAX_ENDSTOP_INVERTING true
   #define Z_MIN_PROBE_ENDSTOP_INVERTING true
-  
+
   #if ENABLED(TITAN_EXTRUDER)
     #define DEFAULT_AXIS_STEPS_PER_UNIT   { 100, 100, 400, TITAN_EXTRUDER_STEPS }
   #else
@@ -474,23 +474,23 @@
       #define DEFAULT_AXIS_STEPS_PER_UNIT   { 100, 100, 400, 463 }
     #endif
   #endif
-  
+
   #define DEFAULT_MAX_FEEDRATE          { 300, 300, 15, 50 }
   #define DEFAULT_MAX_ACCELERATION      { 2000, 2000, 200, 10000 }
 
-  #define DEFAULT_ACCELERATION          1000    
-  #define DEFAULT_RETRACT_ACCELERATION  1500   
-  #define DEFAULT_TRAVEL_ACCELERATION   1000    
-  
+  #define DEFAULT_ACCELERATION          1000
+  #define DEFAULT_RETRACT_ACCELERATION  1500
+  #define DEFAULT_TRAVEL_ACCELERATION   1000
+
   #define DEFAULT_XJERK                 10.0
   #define DEFAULT_YJERK                 10.0
   #define DEFAULT_ZJERK                  0.4
   #define DEFAULT_EJERK                  5.0
-  
+
   #define INVERT_X_DIR false
   #define INVERT_Y_DIR false
   #define INVERT_Z_DIR true
-  
+
   #if ENABLED(TITAN_EXTRUDER)
     #define INVERT_E0_DIR true
   #else
@@ -500,7 +500,7 @@
   #define X_BED_SIZE 300
   #define Y_BED_SIZE 300
   #define Z_MAX_POS 380
-  
+
   #if ENABLED(HOME_ADJUST)
     #define X_MIN_POS X_HOME_LOCATION
     #define Y_MIN_POS Y_HOME_LOCATION
@@ -508,12 +508,12 @@
     #define X_MIN_POS 0
     #define Y_MIN_POS 0
   #endif
-  
+
   #define ENCODER_PULSES_PER_STEP 4
   #define ENCODER_STEPS_PER_MENU_ITEM 1
-  
+
   #define REVERSE_ENCODER_DIRECTION
-  
+
   #define PRINTER_ENABLED_CHECK
 #endif
 
@@ -534,7 +534,7 @@
   #define Y_MAX_ENDSTOP_INVERTING true
   #define Z_MAX_ENDSTOP_INVERTING true
   #define Z_MIN_PROBE_ENDSTOP_INVERTING true
-  
+
   #if ENABLED(TITAN_EXTRUDER)
     #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, TITAN_EXTRUDER_STEPS }
   #else
@@ -544,23 +544,23 @@
       #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 }
     #endif
   #endif
-  
+
   #define DEFAULT_MAX_FEEDRATE          { 300, 300, 15, 50 }
   #define DEFAULT_MAX_ACCELERATION      { 2000, 2000, 200, 10000 }
 
-  #define DEFAULT_ACCELERATION          750    
-  #define DEFAULT_RETRACT_ACCELERATION  1500   
-  #define DEFAULT_TRAVEL_ACCELERATION   750    
-  
+  #define DEFAULT_ACCELERATION          750
+  #define DEFAULT_RETRACT_ACCELERATION  1500
+  #define DEFAULT_TRAVEL_ACCELERATION   750
+
   #define DEFAULT_XJERK                 10.0
   #define DEFAULT_YJERK                 10.0
   #define DEFAULT_ZJERK                  0.4
   #define DEFAULT_EJERK                  5.0
-  
+
   #define INVERT_X_DIR true
   #define INVERT_Y_DIR true
   #define INVERT_Z_DIR false
-  
+
   #if ENABLED(TITAN_EXTRUDER)
     #define INVERT_E0_DIR false
   #else
@@ -570,7 +570,7 @@
   #define X_BED_SIZE 235
   #define Y_BED_SIZE 235
   #define Z_MAX_POS 260
-  
+
   #if ENABLED(HOME_ADJUST)
     #define X_MIN_POS X_HOME_LOCATION
     #define Y_MIN_POS Y_HOME_LOCATION
@@ -578,10 +578,10 @@
     #define X_MIN_POS -7
     #define Y_MIN_POS -7
   #endif
-  
+
   #define ENCODER_PULSES_PER_STEP 4
   #define ENCODER_STEPS_PER_MENU_ITEM 1
-  
+
   #define PRINTER_ENABLED_CHECK
 #endif
 
@@ -597,7 +597,7 @@
   #else
     #define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
   #endif
-  
+
   #define BAUDRATE 250000
   #define DIRECT_DRIVE_PRINTER
 
@@ -608,7 +608,7 @@
   #define Y_MAX_ENDSTOP_INVERTING true
   #define Z_MAX_ENDSTOP_INVERTING true
   #define Z_MIN_PROBE_ENDSTOP_INVERTING true
-  
+
   #if ENABLED(TITAN_EXTRUDER)
     #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, TITAN_EXTRUDER_STEPS }
   #else
@@ -618,23 +618,23 @@
       #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 105 }
     #endif
   #endif
-  
+
   #define DEFAULT_MAX_FEEDRATE          { 300, 300, 15, 25 }
   #define DEFAULT_MAX_ACCELERATION      { 800, 800, 200, 10000 }
 
-  #define DEFAULT_ACCELERATION          800    
-  #define DEFAULT_RETRACT_ACCELERATION  2500   
-  #define DEFAULT_TRAVEL_ACCELERATION   800    
-  
+  #define DEFAULT_ACCELERATION          800
+  #define DEFAULT_RETRACT_ACCELERATION  2500
+  #define DEFAULT_TRAVEL_ACCELERATION   800
+
   #define DEFAULT_XJERK                 10.0
   #define DEFAULT_YJERK                 10.0
   #define DEFAULT_ZJERK                  0.4
   #define DEFAULT_EJERK                  5.0
-  
+
   #define INVERT_X_DIR true
   #define INVERT_Y_DIR false
   #define INVERT_Z_DIR true
-  
+
   #if ENABLED(TITAN_EXTRUDER)
     #define INVERT_E0_DIR true
   #else
@@ -644,7 +644,7 @@
   #define X_BED_SIZE 300
   #define Y_BED_SIZE 300
   #define Z_MAX_POS 380
-  
+
   #if ENABLED(HOME_ADJUST)
     #define X_MIN_POS X_HOME_LOCATION
     #define Y_MIN_POS Y_HOME_LOCATION
@@ -652,12 +652,12 @@
     #define X_MIN_POS 0
     #define Y_MIN_POS 0
   #endif
-  
+
   #define ENCODER_PULSES_PER_STEP 4
   #define ENCODER_STEPS_PER_MENU_ITEM 1
-  
+
   #define REVERSE_ENCODER_DIRECTION
-  
+
   #define PRINTER_ENABLED_CHECK
 
 #endif
@@ -666,16 +666,16 @@
 //Wanhao D6 Model Settings
 #if ENABLED(WANHAO_D6)
   #define BAUDRATE 250000
-  
+
   #define ULTIPANEL
   #define U8GLIB_SSD1306
   #define LCD_WIDTH 22
   #define LCD_HEIGHT 5
   #define LCD_RESET_PIN 5
   #define PCA9632
-  
+
   #define DIRECT_DRIVE_PRINTER
-  
+
   #define X_MIN_ENDSTOP_INVERTING true
   #define Y_MIN_ENDSTOP_INVERTING true
   #define Z_MIN_ENDSTOP_INVERTING true
@@ -683,7 +683,7 @@
   #define Y_MAX_ENDSTOP_INVERTING true
   #define Z_MAX_ENDSTOP_INVERTING true
   #define Z_MIN_PROBE_ENDSTOP_INVERTING true
-  
+
   #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 99 }
 
   #define DEFAULT_MAX_FEEDRATE          { 300, 300, 15, 50 }
@@ -693,27 +693,27 @@
   #define DEFAULT_ACCELERATION          500    // X, Y, Z and E acceleration for printing moves
   #define DEFAULT_RETRACT_ACCELERATION  1000    // E acceleration for retracts
   #define DEFAULT_TRAVEL_ACCELERATION   500    // X, Y, Z acceleration for travel (non printing) moves
-  
+
   #define DEFAULT_XJERK                 10.0
   #define DEFAULT_YJERK                 10.0
   #define DEFAULT_ZJERK                  0.3
   #define DEFAULT_EJERK                  1.0
-  
+
   #define INVERT_X_DIR true
   #define INVERT_Y_DIR false
   #define INVERT_Z_DIR true
   #define INVERT_E0_DIR true
-  
+
   #ifndef MOTHERBOARD
     #define MOTHERBOARD BOARD_ULTIMAIN_2
   #endif
-  
+
   #if ENABLED(WANHAO_D6_5015)
     #define X_BED_SIZE 175
   #else
     #define X_BED_SIZE 200
   #endif
-  #define Y_BED_SIZE 200  
+  #define Y_BED_SIZE 200
   #define Z_MAX_POS 170
 
   #if ENABLED(HOME_ADJUST)
@@ -723,11 +723,11 @@
     #define X_MIN_POS 0
     #define Y_MIN_POS 0
   #endif
-  
+
   #define ENCODER_PULSES_PER_STEP 2
   #define ENCODER_STEPS_PER_MENU_ITEM 1
   #define REVERSE_ENCODER_DIRECTION
-  
+
   #define PRINTER_ENABLED_CHECK
 
 #endif //end D6
@@ -741,7 +741,7 @@
   #ifndef MOTHERBOARD
     #define MOTHERBOARD BOARD_RAMPSPLUS2
   #endif
-  
+
   #define X_MIN_ENDSTOP_INVERTING true
   #define Y_MIN_ENDSTOP_INVERTING true
   #define Z_MIN_ENDSTOP_INVERTING true
@@ -749,7 +749,7 @@
   #define Y_MAX_ENDSTOP_INVERTING true
   #define Z_MAX_ENDSTOP_INVERTING true
   #define Z_MIN_PROBE_ENDSTOP_INVERTING true
-    
+
   #if ENABLED(TITAN_EXTRUDER)
     #if ENABLED(TIM_U10)
       #define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 800, TITAN_EXTRUDER_STEPS }
@@ -765,7 +765,7 @@
   #endif
   #define DEFAULT_MAX_FEEDRATE          { 400, 400, 15, 50 }
   #define DEFAULT_MAX_ACCELERATION      { 1000, 1000, 100, 3000 }
-  
+
   #define DEFAULT_ACCELERATION          500    // X, Y, Z and E acceleration for printing moves
   #define DEFAULT_RETRACT_ACCELERATION  500    // E acceleration for retracts
   #define DEFAULT_TRAVEL_ACCELERATION   500    // X, Y, Z acceleration for travel (non printing) moves
@@ -786,11 +786,11 @@
     #define X_MIN_POS 0
     #define Y_MIN_POS 0
   #endif
-  
+
   #define INVERT_X_DIR true
   #define INVERT_Y_DIR true
   #define INVERT_Z_DIR true
-  
+
   #if ENABLED(TITAN_EXTRUDER)
     #define INVERT_E0_DIR false
   #else
@@ -799,7 +799,7 @@
 
   //#define ENCODER_PULSES_PER_STEP 4
   //#define ENCODER_STEPS_PER_MENU_ITEM 1
-  
+
   #define PRINTER_ENABLED_CHECK
 #endif
 //End U10 Settings
@@ -813,7 +813,7 @@
   #ifndef MOTHERBOARD
     #define MOTHERBOARD BOARD_ONEPLUS1_wanhao
   #endif
-  
+
   #define X_MIN_ENDSTOP_INVERTING true
   #define Y_MIN_ENDSTOP_INVERTING true
   #define Z_MIN_ENDSTOP_INVERTING true
@@ -821,7 +821,7 @@
   #define Y_MAX_ENDSTOP_INVERTING true
   #define Z_MAX_ENDSTOP_INVERTING true
   #define Z_MIN_PROBE_ENDSTOP_INVERTING true
-    
+
   #if ENABLED(TITAN_EXTRUDER)
     #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, TITAN_EXTRUDER_STEPS }
   #else
@@ -833,7 +833,7 @@
   #endif
   #define DEFAULT_MAX_FEEDRATE          { 400, 400, 15, 50 }
   #define DEFAULT_MAX_ACCELERATION      { 3000, 3000, 100, 3000 }
-  
+
   #define DEFAULT_ACCELERATION          800    // X, Y, Z and E acceleration for printing moves
   #define DEFAULT_RETRACT_ACCELERATION  800    // E acceleration for retracts
   #define DEFAULT_TRAVEL_ACCELERATION   1000    // X, Y, Z acceleration for travel (non printing) moves
@@ -854,11 +854,11 @@
     #define X_MIN_POS 0
     #define Y_MIN_POS 0
   #endif
-  
+
   #define INVERT_X_DIR true
   #define INVERT_Y_DIR false
   #define INVERT_Z_DIR false
-  
+
   #if ENABLED(TITAN_EXTRUDER)
     #define INVERT_E0_DIR false
   #else
@@ -867,7 +867,7 @@
 
   #define ENCODER_PULSES_PER_STEP 4
   #define ENCODER_STEPS_PER_MENU_ITEM 1
-  
+
   #define PRINTER_ENABLED_CHECK
 #endif
 //end i3 Mini Settings
@@ -876,18 +876,18 @@
 #if ENABLED(WANHAO_I3)
 	#define SLIM_1284P
   #define BAUDRATE 115200
-  
+
   #if ENABLED(EZOUTV2_ENABLE)
     #define SPEAKER_KILL
   #endif
-  
+
   #ifndef MOTHERBOARD
     #define MOTHERBOARD BOARD_MELZI_MAKR3D
   #endif
   #define IS_WANHAO_DI3
 
   #define DIRECT_DRIVE_PRINTER
-  
+
   #define X_MIN_ENDSTOP_INVERTING true
   #define Y_MIN_ENDSTOP_INVERTING true
   #define Z_MIN_ENDSTOP_INVERTING true
@@ -905,14 +905,14 @@
       #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 100 }
     #endif
   #endif
-  
+
   #define DEFAULT_MAX_FEEDRATE          { 300, 300, 15, 50 }
 
   #define DEFAULT_MAX_ACCELERATION      { 1000, 1000, 100, 10000 }
-  
-  #define DEFAULT_ACCELERATION          700    
-  #define DEFAULT_RETRACT_ACCELERATION  3000   
-  #define DEFAULT_TRAVEL_ACCELERATION   700    
+
+  #define DEFAULT_ACCELERATION          700
+  #define DEFAULT_RETRACT_ACCELERATION  3000
+  #define DEFAULT_TRAVEL_ACCELERATION   700
 
   #define X_BED_SIZE 200
   #define Y_BED_SIZE 200
@@ -952,14 +952,14 @@
   #endif
 
   #define LCD_FOR_MELZI
-  
+
   #define PRINTER_ENABLED_CHECK
 #endif //end i3 settings
 
 //CR-10 and Ender 3 Model Settings
 #if ENABLED(CR10) || ENABLED(CR10_MINI) || ENABLED(CR10_S4) || ENABLED(CR10_S5) || ENABLED(ENDER3) || ENABLED(ENDER5)
   #define SLIM_1284P
-  #define BAUDRATE 115200
+  #define BAUDRATE 250000
 
   #define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
 
@@ -970,7 +970,7 @@
   #if ENABLED(LINEAR_ADVANCE)
     #define SPEAKER_KILL
   #endif
-    
+
   #define X_MIN_ENDSTOP_INVERTING false
   #define Y_MIN_ENDSTOP_INVERTING false
   #define Z_MIN_ENDSTOP_INVERTING false
@@ -988,29 +988,29 @@
       #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 }
 	#endif
   #endif
-  
+
   #define DEFAULT_MAX_FEEDRATE          { 500, 500, 15, 50 }
   #define DEFAULT_MAX_ACCELERATION      { 1000, 1000, 100, 5000 }
 
-  #define DEFAULT_ACCELERATION          500   
-  #define DEFAULT_RETRACT_ACCELERATION  1000  
-  #define DEFAULT_TRAVEL_ACCELERATION   500   
-  
+  #define DEFAULT_ACCELERATION          500
+  #define DEFAULT_RETRACT_ACCELERATION  1000
+  #define DEFAULT_TRAVEL_ACCELERATION   500
+
   #define DEFAULT_XJERK                 10.0
   #define DEFAULT_YJERK                 10.0
   #define DEFAULT_ZJERK                  0.4
   #define DEFAULT_EJERK                  5.0
-  
+
   #define INVERT_X_DIR true
   #define INVERT_Y_DIR true
   #define INVERT_Z_DIR false
-  
+
   #if ENABLED(TITAN_EXTRUDER)
     #define INVERT_E0_DIR false
   #else
     #define INVERT_E0_DIR true
   #endif
-    
+
   #ifndef MOTHERBOARD
     #define MOTHERBOARD BOARD_MELZI_CREALITY
   #endif
@@ -1038,13 +1038,13 @@
     #define Y_BED_SIZE 500
     #define Z_MAX_POS 500
   #endif
-  
+
   #if ENABLED(ENDER3)
     #define X_BED_SIZE 235
     #define Y_BED_SIZE 235
     #define Z_MAX_POS 250
   #endif
-  
+
   #if ENABLED(ENDER5)
     #define X_BED_SIZE 220
     #define Y_BED_SIZE 220
@@ -1058,10 +1058,10 @@
     #define X_MIN_POS 0
     #define Y_MIN_POS 0
   #endif
-  
+
   #define ENCODER_PULSES_PER_STEP 4
   #define ENCODER_STEPS_PER_MENU_ITEM 1
-  
+
   #define PRINTER_ENABLED_CHECK
 
 #endif //end CR-10
@@ -1069,7 +1069,7 @@
 //CR-10S Model Settings
 #if ENABLED(CR10S) || ENABLED(CR10S_MINI) || ENABLED(CR10S_S4) || ENABLED(CR10S_S5) || ENABLED(ENDER3_DUALBOARD) || ENABLED(CR20)
   #define BAUDRATE 115200
-  
+
   #if ENABLED(TOUCH_LCD_FIX)
     #define CR10S_NOFILAMENTSENSOR
   #endif
@@ -1099,19 +1099,19 @@
       #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 }
 	#endif
   #endif
-  
+
   #define DEFAULT_MAX_FEEDRATE          { 500, 500, 15, 50 }
   #define DEFAULT_MAX_ACCELERATION      { 1000, 1000, 100, 5000 }
 
-  #define DEFAULT_ACCELERATION          500    
-  #define DEFAULT_RETRACT_ACCELERATION  1000   
-  #define DEFAULT_TRAVEL_ACCELERATION   500    
-  
+  #define DEFAULT_ACCELERATION          500
+  #define DEFAULT_RETRACT_ACCELERATION  1000
+  #define DEFAULT_TRAVEL_ACCELERATION   500
+
   #define DEFAULT_XJERK                 10.0
   #define DEFAULT_YJERK                 10.0
   #define DEFAULT_ZJERK                  0.4
   #define DEFAULT_EJERK                  5.0
-  
+
   #define INVERT_X_DIR false
   #define INVERT_Y_DIR false
   #define INVERT_Z_DIR true
@@ -1120,11 +1120,11 @@
   #else
     #define INVERT_E0_DIR false
   #endif
-  
+
   #ifndef MOTHERBOARD
     #define MOTHERBOARD BOARD_CR10S
   #endif
-  
+
   #if ENABLED(EZOUT_ENABLE)
     #define SPEAKER_KILL
   #endif
@@ -1152,26 +1152,26 @@
     #define Y_BED_SIZE 500
     #define Z_MAX_POS 500
   #endif
-  
+
   #if ENABLED(ENDER3_DUALBOARD)
     #define X_BED_SIZE 220
     #define Y_BED_SIZE 220
     #define Z_MAX_POS 250
   #endif
-  
+
   #if ENABLED(CR20)
     #define X_BED_SIZE 220
     #define Y_BED_SIZE 220
     #define Z_MAX_POS 320
   #endif
-  
+
   //dual extrusion options
-  
+
   //single hotend y adapter
   #if ENABLED(DUAL_EXTRUDER_SINGLE_HOTEND)
     #define CR10SDUALEBOARD
     #define SINGLENOZZLE
-    
+
     #if ENABLED(TITAN_EXTRUDER)
       #define INVERT_E1_DIR true
     #else
@@ -1183,16 +1183,16 @@
   //dual hotend dual nozzles
   #if ENABLED(DUAL_HOTEND_DUAL_NOZZLES)
     #define CR10SDUALEBOARD
-    
+
     #if ENABLED(TITAN_EXTRUDER)
       #define INVERT_E1_DIR true
     #else
       #define INVERT_E1_DIR false
     #endif
-        
+
     #define HOTEND_OFFSET_X {0.0, DUAL_HOTEND_X_DISTANCE} // (in mm) for each extruder, offset of the hotend on the X axis
     #define HOTEND_OFFSET_Y {0.0, 0.00}  // (in mm) for each extruder, offset of the hotend on the Y axis
-  
+
   #endif
 
   #if ENABLED(HOME_ADJUST)
@@ -1202,10 +1202,10 @@
     #define X_MIN_POS 0
     #define Y_MIN_POS 0
   #endif
-  
+
   #define ENCODER_PULSES_PER_STEP 4
   #define ENCODER_STEPS_PER_MENU_ITEM 1
-  
+
   #define PRINTER_ENABLED_CHECK
 
 #endif //end CR-10S
@@ -1216,7 +1216,7 @@
   #define BAUDRATE 115200
 
   #define MINIPANEL
-  
+
   #define X_MIN_ENDSTOP_INVERTING false
   #define Y_MIN_ENDSTOP_INVERTING false
   #define Z_MIN_ENDSTOP_INVERTING false
@@ -1224,7 +1224,7 @@
   #define Y_MAX_ENDSTOP_INVERTING true
   #define Z_MAX_ENDSTOP_INVERTING true
   #define Z_MIN_PROBE_ENDSTOP_INVERTING false
-  
+
   #define SPEAKER_KILL
 
   #if ENABLED(TITAN_EXTRUDER)
@@ -1239,19 +1239,19 @@
   #define DEFAULT_MAX_FEEDRATE          { 500, 500, 15, 50 }
   #define DEFAULT_MAX_ACCELERATION      { 2000, 2000, 100, 5000 }
 
-  #define DEFAULT_ACCELERATION          1000    
-  #define DEFAULT_RETRACT_ACCELERATION  1000    
-  #define DEFAULT_TRAVEL_ACCELERATION   1000    
-  
+  #define DEFAULT_ACCELERATION          1000
+  #define DEFAULT_RETRACT_ACCELERATION  1000
+  #define DEFAULT_TRAVEL_ACCELERATION   1000
+
   #define DEFAULT_XJERK                 10.0
   #define DEFAULT_YJERK                 10.0
   #define DEFAULT_ZJERK                  0.4
   #define DEFAULT_EJERK                  5.0
-  
+
   #define INVERT_X_DIR true
   #define INVERT_Y_DIR true
   #define INVERT_Z_DIR false
-  
+
   #if ENABLED(TITAN_EXTRUDER)
     #define INVERT_E0_DIR false
   #else
@@ -1269,11 +1269,11 @@
     #define X_MIN_POS 0
     #define Y_MIN_POS 0
   #endif
-  
+
   #define X_BED_SIZE 160
   #define Y_BED_SIZE 150
   #define Z_MAX_POS 220
-  
+
   #define PRINTER_ENABLED_CHECK
 
 #endif //end Ender2
@@ -1304,20 +1304,20 @@
   #define DEFAULT_MAX_FEEDRATE          { 500, 500, 15, 50 }
   #define DEFAULT_MAX_ACCELERATION      { 1000, 1000, 100, 5000 }
 
-  #define DEFAULT_ACCELERATION          500    
-  #define DEFAULT_RETRACT_ACCELERATION  1000   
-  #define DEFAULT_TRAVEL_ACCELERATION   500    
-  
+  #define DEFAULT_ACCELERATION          500
+  #define DEFAULT_RETRACT_ACCELERATION  1000
+  #define DEFAULT_TRAVEL_ACCELERATION   500
+
   #define DEFAULT_XJERK                 10.0
   #define DEFAULT_YJERK                 10.0
   #define DEFAULT_ZJERK                  0.4
   #define DEFAULT_EJERK                  5.0
-  
+
   #define INVERT_X_DIR false
   #define INVERT_Y_DIR false
   #define INVERT_Z_DIR true
   #define INVERT_E0_DIR true
-  
+
   #ifndef MOTHERBOARD
     #define MOTHERBOARD BOARD_MKS_BASE
   #endif
@@ -1329,13 +1329,13 @@
     #define X_MIN_POS 0
     #define Y_MIN_POS 0
   #endif
-  
+
   #define X_BED_SIZE 300
   #define Y_BED_SIZE 300
   #define Z_MAX_POS 400
 
   #define REVERSE_ENCODER_DIRECTION
-  
+
   #define PRINTER_ENABLED_CHECK
 
 #endif //end tornado
@@ -1344,7 +1344,7 @@
 #if ENABLED(TAZ5)
   #define BAUDRATE 250000
   #define V6_HOTEND
-  
+
   #define DIRECT_DRIVE_PRINTER
 
   #define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
@@ -1356,31 +1356,31 @@
   #define Y_MAX_ENDSTOP_INVERTING true
   #define Z_MAX_ENDSTOP_INVERTING true
   #define Z_MIN_PROBE_ENDSTOP_INVERTING true
-  
+
   #if ENABLED(CUSTOM_ESTEPS)
 	  #define DEFAULT_AXIS_STEPS_PER_UNIT {100.5,100.5,1600,CUSTOM_ESTEPS_VALUE}
   #else
     #define DEFAULT_AXIS_STEPS_PER_UNIT {100.5,100.5,1600,830}
   #endif
-  
+
   #define DEFAULT_MAX_FEEDRATE {300, 300, 3, 50}
 
   #define DEFAULT_MAX_ACCELERATION {9000,9000,100,10000}
 
   #define DEFAULT_ACCELERATION          500    // X, Y, Z and E acceleration for printing moves
   #define DEFAULT_RETRACT_ACCELERATION  3000    // E acceleration for retracts
-  #define DEFAULT_TRAVEL_ACCELERATION   500    // X, Y, Z acceleration for travel (non printing) moves  
-  
+  #define DEFAULT_TRAVEL_ACCELERATION   500    // X, Y, Z acceleration for travel (non printing) moves
+
   #define DEFAULT_XJERK                  8.0
   #define DEFAULT_YJERK                  8.0
   #define DEFAULT_ZJERK                  0.4
   #define DEFAULT_EJERK                  5.0
-  
+
   #define INVERT_X_DIR false
   #define INVERT_Y_DIR true
   #define INVERT_Z_DIR false
   #define INVERT_E0_DIR true
-  
+
   #ifndef MOTHERBOARD
     #define MOTHERBOARD BOARD_RAMBO
   #endif
@@ -1392,11 +1392,11 @@
     #define X_MIN_POS 0
     #define Y_MIN_POS 0
   #endif
-  
+
   #define X_BED_SIZE 295
   #define Y_BED_SIZE 295
   #define Z_MAX_POS 250
-  
+
   #define PRINTER_ENABLED_CHECK
 #endif //end taz5
 
@@ -1404,9 +1404,9 @@
 #if ENABLED(ANET_A2) || ENABLED(ANET_A6) || ENABLED(ANET_A8) || ENABLED(ANET_E10) || ENABLED(ANET_E12)
   #define SLIM_1284P
   #ifndef MOTHERBOARD
-    #define MOTHERBOARD BOARD_ANET_10 
+    #define MOTHERBOARD BOARD_ANET_10
   #endif
-  
+
   #define BAUDRATE 115200
 
   #define X_MIN_ENDSTOP_INVERTING true
@@ -1416,7 +1416,7 @@
   #define Y_MAX_ENDSTOP_INVERTING true
   #define Z_MAX_ENDSTOP_INVERTING true
   #define Z_MIN_PROBE_ENDSTOP_INVERTING true
-  
+
   #if ENABLED(ANET_A2) || ENABLED(ANET_A6) || ENABLED(ANET_A8)
     #if ENABLED(TITAN_EXTRUDER)
       #define DEFAULT_AXIS_STEPS_PER_UNIT   { 100, 100, 400, TITAN_EXTRUDER_STEPS }
@@ -1441,15 +1441,15 @@
   #define DEFAULT_MAX_FEEDRATE          { 500, 500, 15, 50 }
   #define DEFAULT_MAX_ACCELERATION      { 1000, 1000, 100, 5000 }
 
-  #define DEFAULT_ACCELERATION          500   
-  #define DEFAULT_RETRACT_ACCELERATION  1000  
-  #define DEFAULT_TRAVEL_ACCELERATION   500   
-  
+  #define DEFAULT_ACCELERATION          500
+  #define DEFAULT_RETRACT_ACCELERATION  1000
+  #define DEFAULT_TRAVEL_ACCELERATION   500
+
   #define DEFAULT_XJERK                 10.0
   #define DEFAULT_YJERK                 10.0
   #define DEFAULT_ZJERK                  0.4
   #define DEFAULT_EJERK                  5.0
-  
+
   #if ENABLED(ANET_LCD2004)
     #define ZONESTAR_LCD
     #define LCD2004
@@ -1461,8 +1461,8 @@
   #define Z_MIN_POS 0
   #define X_MAX_POS X_BED_SIZE
   #define Y_MAX_POS Y_BED_SIZE
-  
-  #if ENABLED(A2_SMALL_BED)   
+
+  #if ENABLED(A2_SMALL_BED)
     #if ENABLED(HOME_ADJUST)
       #define X_MIN_POS X_HOME_LOCATION
       #define Y_MIN_POS Y_HOME_LOCATION
@@ -1470,18 +1470,18 @@
       #define X_MIN_POS 0
       #define Y_MIN_POS 0
     #endif
-    
+
     #define DIRECT_DRIVE_PRINTER
-    
+
     #define X_BED_SIZE 220
     #define Y_BED_SIZE 220
     #define Z_MAX_POS 230
- 
+
     #if ENABLED(ANET_OEM)
       #define X_PROBE_OFFSET_FROM_EXTRUDER -33
       #define Y_PROBE_OFFSET_FROM_EXTRUDER -22
     #endif
- 
+
     #define INVERT_X_DIR false
     #define INVERT_Y_DIR true
     #define INVERT_Z_DIR false
@@ -1489,7 +1489,7 @@
       #define INVERT_E0_DIR true
 	#else
       #define INVERT_E0_DIR false
-    #endif 
+    #endif
 #endif
 
 #if ENABLED(A2_LARGE_BED)
@@ -1500,13 +1500,13 @@
       #define X_MIN_POS 0
       #define Y_MIN_POS 0
     #endif
-    
+
     #define DIRECT_DRIVE_PRINTER
-    
+
     #define X_BED_SIZE 220
     #define Y_BED_SIZE 270
     #define Z_MAX_POS 230
-    
+
     #if ENABLED(ANET_OEM)
       #define X_PROBE_OFFSET_FROM_EXTRUDER -33
       #define Y_PROBE_OFFSET_FROM_EXTRUDER -22
@@ -1529,9 +1529,9 @@
       #define X_MIN_POS 0
       #define Y_MIN_POS 0
     #endif
-    
+
     #define DIRECT_DRIVE_PRINTER
-    
+
     #define X_BED_SIZE 220
     #define Y_BED_SIZE 220
     #define Z_MAX_POS 250
@@ -1540,7 +1540,7 @@
       #define X_PROBE_OFFSET_FROM_EXTRUDER -1
       #define Y_PROBE_OFFSET_FROM_EXTRUDER -54
     #endif
-	
+
     #define INVERT_X_DIR false
     #define INVERT_Y_DIR false
     #define INVERT_Z_DIR true
@@ -1559,28 +1559,28 @@
      #define X_MIN_POS -33
      #define Y_MIN_POS -10
   #endif
-  
+
   #define DIRECT_DRIVE_PRINTER
-    
+
   #define X_BED_SIZE 220
   #define Y_BED_SIZE 220
   #define Z_MAX_POS 240
-    
+
   #if ENABLED(ANET_OEM)
     #define X_PROBE_OFFSET_FROM_EXTRUDER -26
     #define Y_PROBE_OFFSET_FROM_EXTRUDER -40
   #endif
-   
+
   #define INVERT_X_DIR false
   #define INVERT_Y_DIR false
   #define INVERT_Z_DIR true
-  
+
   #if ENABLED(TITAN_EXTRUDER)
     #define INVERT_E0_DIR true
   #else
     #define INVERT_E0_DIR false
   #endif
-  
+
 #endif
 
 #if ENABLED(ANET_E10)
@@ -1591,7 +1591,7 @@
       #define X_MIN_POS -2
       #define Y_MIN_POS -8
     #endif
-    
+
     #define X_BED_SIZE 220
     #define Y_BED_SIZE 270
     #define Z_MAX_POS 300
@@ -1600,17 +1600,17 @@
       #define X_PROBE_OFFSET_FROM_EXTRUDER -38
       #define Y_PROBE_OFFSET_FROM_EXTRUDER -12
     #endif
-	
+
     #define INVERT_X_DIR false
     #define INVERT_Y_DIR true
     #define INVERT_Z_DIR true
-	
+
     #if ENABLED(TITAN_EXTRUDER)
       #define INVERT_E0_DIR false
 	#else
       #define INVERT_E0_DIR true
     #endif
-	
+
 #endif
 
 #if ENABLED(ANET_E12)
@@ -1621,7 +1621,7 @@
       #define X_MIN_POS -2
       #define Y_MIN_POS -8
     #endif
-    
+
     #define X_BED_SIZE 300
     #define Y_BED_SIZE 300
     #define Z_MAX_POS 400
@@ -1633,7 +1633,7 @@
     #define INVERT_X_DIR false
     #define INVERT_Y_DIR true
     #define INVERT_Z_DIR true
-	
+
     #if ENABLED(TITAN_EXTRUDER)
       #define INVERT_E0_DIR false
     #else
@@ -1642,12 +1642,12 @@
 #endif
 
 #define PRINTER_ENABLED_CHECK
-  
+
 #endif //End ANET model settings
 
 //Machine Check
 #if DISABLED(PRINTER_ENABLED_CHECK)
-  #if DISABLED(TH3DINHOUSEMACHINE)  
+  #if DISABLED(TH3DINHOUSEMACHINE)
     #error "READ THIS: No printer uncommented in Configuration.h file. Please uncomment your printer and try again."
   #endif
 #endif
@@ -1775,13 +1775,13 @@
   #endif
 #endif
 
-#define TEMP_RESIDENCY_TIME 5  
-#define TEMP_HYSTERESIS 3      
-#define TEMP_WINDOW     1      
+#define TEMP_RESIDENCY_TIME 5
+#define TEMP_HYSTERESIS 3
+#define TEMP_WINDOW     1
 
-#define TEMP_BED_RESIDENCY_TIME 5 
+#define TEMP_BED_RESIDENCY_TIME 5
 #define TEMP_BED_HYSTERESIS 3
-#define TEMP_BED_WINDOW     1     
+#define TEMP_BED_WINDOW     1
 
 #define HEATER_0_MINTEMP 5
 #define HEATER_1_MINTEMP 5
@@ -1810,7 +1810,7 @@
 #if ENABLED(PIDTEMP)
   #define PID_AUTOTUNE_MENU
   #define PID_FUNCTIONAL_RANGE 10
-  
+
   #if ENABLED(WANHAO_D6)
     #define  DEFAULT_Kp 9.12
     #define  DEFAULT_Ki 0.41
@@ -1823,12 +1823,12 @@
     #define DEFAULT_Kp 31.89
     #define DEFAULT_Ki 4.99
     #define DEFAULT_Kd 50.94
-  #else  
+  #else
     #define  DEFAULT_Kp 22.2
     #define  DEFAULT_Ki 1.08
     #define  DEFAULT_Kd 114
   #endif
-#endif 
+#endif
 
 #if ENABLED(PIDBED_ENABLE)
   #if DISABLED(SLIM_1284P) && DISABLED(MANUAL_MESH_LEVELING)
@@ -1847,7 +1847,7 @@
     #define  DEFAULT_bedKp 690.34
     #define  DEFAULT_bedKi 111.47
     #define  DEFAULT_bedKd 1068.83
-  #endif	
+  #endif
 #endif
 
 #if DISABLED(NO_COLD_PREVENT)
@@ -1859,8 +1859,8 @@
 #define PREVENT_LENGTHY_EXTRUDE
 #define EXTRUDE_MAXLENGTH 1000
 
-#define THERMAL_PROTECTION_HOTENDS 
-#define THERMAL_PROTECTION_BED     
+#define THERMAL_PROTECTION_HOTENDS
+#define THERMAL_PROTECTION_BED
 
 #if ENABLED(WANHAO_I3MINI)
   #define USE_YMIN_PLUG
@@ -1887,7 +1887,7 @@
 #else
 	#define HOMING_FEEDRATE_Z  (4*60)
 #endif
-  
+
 #if ENABLED(EZABL_ENABLE)
   #define RESTORE_LEVELING_AFTER_G28
   #define FIX_MOUNTED_PROBE
@@ -1898,18 +1898,18 @@
     #define XY_PROBE_SPEED 12000
   #endif
   #define Z_PROBE_SPEED_FAST HOMING_FEEDRATE_Z
-  #define Z_PROBE_SPEED_SLOW (Z_PROBE_SPEED_FAST / 2)  
+  #define Z_PROBE_SPEED_SLOW (Z_PROBE_SPEED_FAST / 2)
   #if ENABLED(FIX_MOUNTED_PROBE) && DISABLED(HEATERS_ON_DURING_PROBING)
-    #define PROBING_HEATERS_OFF   
-  #endif  
+    #define PROBING_HEATERS_OFF
+  #endif
   #define MULTIPLE_PROBING 2
   #define Z_CLEARANCE_DEPLOY_PROBE   5
-  #define Z_CLEARANCE_BETWEEN_PROBES 3 
+  #define Z_CLEARANCE_BETWEEN_PROBES 3
   #define Z_PROBE_OFFSET_RANGE_MIN  -5
-  #define Z_PROBE_OFFSET_RANGE_MAX  1  
-  #define Z_MIN_PROBE_REPEATABILITY_TEST  
+  #define Z_PROBE_OFFSET_RANGE_MAX  1
+  #define Z_MIN_PROBE_REPEATABILITY_TEST
   #define Z_AFTER_PROBING           5
-  #define Z_PROBE_LOW_POINT         -3  
+  #define Z_PROBE_LOW_POINT         -3
   #define AUTO_BED_LEVELING_BILINEAR
   #define Z_SAFE_HOMING
   #define GRID_MAX_POINTS_X EZABL_POINTS
@@ -1924,7 +1924,7 @@
   #if ENABLED(EZABL_OUTSIDE_GRID_COMPENSATION)
     #define EXTRAPOLATE_BEYOND_GRID
   #endif
-#endif  
+#endif
 
 #if DISABLED(POWER_LOSS_RECOVERY)
   #define S_CURVE_ACCELERATION
@@ -1933,7 +1933,7 @@
 #define X_ENABLE_ON 0
 #define Y_ENABLE_ON 0
 #define Z_ENABLE_ON 0
-#define E_ENABLE_ON 0 
+#define E_ENABLE_ON 0
 
 #define DISABLE_X false
 #define DISABLE_Y false
@@ -1962,7 +1962,7 @@
   #define Y_HOME_DIR -1
   #define Z_HOME_DIR -1
 #endif
-  
+
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
@@ -2005,10 +2005,10 @@
   #define PROBE_MANUALLY
   #define LCD_BED_LEVELING
   #define MESH_BED_LEVELING
-  #define MBL_Z_STEP 0.025    
-  #define LCD_PROBE_Z_RANGE 4 
-  #define MESH_INSET 10          
-  #define GRID_MAX_POINTS_X 5    
+  #define MBL_Z_STEP 0.025
+  #define LCD_PROBE_Z_RANGE 4
+  #define MESH_INSET EZABL_PROBE_EDGE
+  #define GRID_MAX_POINTS_X EZABL_POINTS
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 #endif
 
@@ -2026,18 +2026,18 @@
 
 #define PREHEAT_1_TEMP_HOTEND 200
 #define PREHEAT_1_TEMP_BED     60
-#define PREHEAT_1_FAN_SPEED     0 
+#define PREHEAT_1_FAN_SPEED     0
 
 #define PREHEAT_2_TEMP_HOTEND 240
 #define PREHEAT_2_TEMP_BED    100
-#define PREHEAT_2_FAN_SPEED     0 
+#define PREHEAT_2_FAN_SPEED     0
 
 #define NOZZLE_PARK_FEATURE
 
 #if ENABLED(NOZZLE_PARK_FEATURE)
   #define NOZZLE_PARK_POINT { 10, 10, 10 }
-  #define NOZZLE_PARK_XY_FEEDRATE 100  
-  #define NOZZLE_PARK_Z_FEEDRATE 5  
+  #define NOZZLE_PARK_XY_FEEDRATE 100
+  #define NOZZLE_PARK_Z_FEEDRATE 5
 #endif
 
 #define PRINTJOB_TIMER_AUTOSTART
